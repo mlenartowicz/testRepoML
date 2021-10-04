@@ -1,6 +1,1 @@
-http://vcprdfdsmtfs03.royallondongroup.com:8080/tfs/ColA/IFDL/Objectivity%20Gamma/_versionControl/changeset/77208
-http://vcprdfdsmtfs03.royallondongroup.com:8080/tfs/ColA/IFDL/Objectivity%20Gamma/_versionControl/changeset/77212
-http://vcprdfdsmtfs03.royallondongroup.com:8080/tfs/ColA/IFDL/Objectivity%20Gamma/_versionControl/changeset/77218
-http://vcprdfdsmtfs03.royallondongroup.com:8080/tfs/ColA/IFDL/Objectivity%20Gamma/_versionControl/changeset/77242
-http://vcprdfdsmtfs03.royallondongroup.com:8080/tfs/ColA/IFDL/Objectivity%20Gamma/_versionControl/changeset/77162
-http://vcprdfdsmtfs03.royallondongroup.com:8080/tfs/ColA/IFDL/Objectivity%20Gamma/_versionControl/changeset/77137
+
