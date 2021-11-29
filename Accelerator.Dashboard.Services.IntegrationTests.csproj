@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{494599E4-B61A-421B-9FB0-8DE66C846A3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accelerator.Dashboard.Services.IntegrationTests</RootNamespace>
+    <AssemblyName>Accelerator.Dashboard.Services.IntegrationTests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\..\AcceleratorKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Label="SlowCheetah">
+    <SlowCheetahToolsPath>C:\Packages\SlowCheetah.2.5.15\tools\</SlowCheetahToolsPath>
+    <SlowCheetah_EnableImportFromNuGet Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='' ">true</SlowCheetah_EnableImportFromNuGet>
+    <SlowCheetah_NuGetImportPath Condition=" '$(SlowCheetah_NuGetImportPath)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\Properties\SlowCheetah\SlowCheetah.Transforms.targets ))</SlowCheetah_NuGetImportPath>
+    <SlowCheetahTargets Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='true' and Exists('$(SlowCheetah_NuGetImportPath)') ">$(SlowCheetah_NuGetImportPath)</SlowCheetahTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\Packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>C:\Packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>C:\Packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Objectivity.Test.Randomizers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=70185fbf4adfd63f, processorArchitecture=MSIL">
+      <HintPath>C:\Packages\Objectivity.Test.Randomizers.1.0.0.0\lib\NET40\Objectivity.Test.Randomizers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Accelerator.AssemblyInfo.cs">
+      <Link>Properties\Accelerator.AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Accelerator.Dashboard.AssemblyInfo.cs">
+      <Link>Properties\Accelerator.Dashboard.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AccountServiceTest.cs" />
+    <Compile Include="DynamicReportServiceTest.cs" />
+    <Compile Include="LocationServiceTest.cs" />
+    <Compile Include="CustomPageServiceTest.cs" />
+    <Compile Include="FixedBusinessCardServiceTest.cs" />
+    <Compile Include="AssetServiceTest.cs" />
+    <Compile Include="AccountInvestmentServiceTest.cs" />
+    <Compile Include="BreadcrumbsServiceTest.cs" />
+    <Compile Include="DashboardIntegrationTest.cs" />
+    <Compile Include="DashboardServiceTest.cs" />
+    <Compile Include="InvocationDetailsMock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedirectionServiceTest.cs" />
+    <Compile Include="SearchServiceTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\2.0\Accelerator.Core\Accelerator.Core.csproj">
+      <Project>{5FCB4765-873B-4BA8-904F-3DEFE05E3413}</Project>
+      <Name>Accelerator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\2.0\Accelerator.Core.Services.Contracts\Accelerator.Core.Services.Contracts.csproj">
+      <Project>{FB1689E9-E203-4694-9326-873F1E28FDDF}</Project>
+      <Name>Accelerator.Core.Services.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\2.0\Accelerator.Core.Services\Accelerator.Core.Services.csproj">
+      <Project>{AD9B26F2-4D3D-4EF0-8138-67A4DA35FF9D}</Project>
+      <Name>Accelerator.Core.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Shared\Common\Accelerator.Common\Accelerator.Common.ServiceClients\Accelerator.Common.ServiceClients.csproj">
+      <Project>{1088204b-5963-48e2-a0a4-566f8ca34b16}</Project>
+      <Name>Accelerator.Common.ServiceClients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Shared\Domain\Accelerator.Domain\Accelerator.Domain\Accelerator.Domain.csproj">
+      <Project>{1d4ead7e-2f39-453e-9262-87e3e7969792}</Project>
+      <Name>Accelerator.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Shared\SIL\Accelerator.SIL\Sonata\Accelerator.SIL.Sonata.IntegrationTest.DataAccess\Accelerator.SIL.Sonata.IntegrationTest.DataAccess.csproj">
+      <Project>{22ca20c1-7dbb-40fa-aa05-3bccf5b3ed80}</Project>
+      <Name>Accelerator.SIL.Sonata.IntegrationTest.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accelerator.Dashboard.BusinessLogic\Accelerator.Dashboard.BusinessLogic.csproj">
+      <Project>{8648E189-389E-4EA2-A033-60E37BD5FF6F}</Project>
+      <Name>Accelerator.Dashboard.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accelerator.Dashboard.DataAccess.EntityFramework\Accelerator.Dashboard.DataAccess.EntityFramework.csproj">
+      <Project>{B5BF72D6-6A43-4162-8D4F-1BB53416E8D4}</Project>
+      <Name>Accelerator.Dashboard.DataAccess.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accelerator.Dashboard.ServiceClients\Accelerator.Dashboard.ServiceClients.csproj">
+      <Project>{15203536-6422-48D1-BFA2-DED3C2EC2A64}</Project>
+      <Name>Accelerator.Dashboard.ServiceClients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accelerator.Dashboard.Services.Contracts\Accelerator.Dashboard.Services.Contracts.csproj">
+      <Project>{53AADF3D-2227-406C-89DF-36DD95AAEE8F}</Project>
+      <Name>Accelerator.Dashboard.Services.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\AcceleratorKey.snk">
+      <Link>AcceleratorKey.snk</Link>
+    </None>
+    <None Include="..\..\..\CodeAnalysis.ruleset">
+      <Link>Properties\CodeAnalysis.ruleset</Link>
+    </None>
+    <None Include="..\..\..\Settings.StyleCop">
+      <Link>Properties\Settings.StyleCop</Link>
+    </None>
+    <None Include="App.config">
+      <TransformOnBuild>true</TransformOnBuild>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>app.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\..\CodeAnalysisDictionary.xml">
+      <Link>Properties\CodeAnalysisDictionary.xml</Link>
+      <SubType>Designer</SubType>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="C:\Packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets" Condition="Exists('C:\Packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('C:\Packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets')" Text="$([System.String]::Format('$(ErrorText)', 'C:\Packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(SlowCheetahTargets)" Label="SlowCheetah" Condition="Exists('$(SlowCheetahTargets)')" />
+  <PropertyGroup Condition="'$(SonarQubeExclude)' == ''">
+    <SonarQubeExclude Condition=" 'Accelerator.Dashboard.sln' != '$(SolutionFileName)' ">true</SonarQubeExclude>
+  </PropertyGroup>
+</Project>
