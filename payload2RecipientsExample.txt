@@ -1,10 +1,10 @@
 {
-    "ClientId": null,
+    "ClientId": 1
     "CallbackAppsList": [
         "FO"
     ],
-    "CorrespondenceId": 0,
-    "ApplicationId": null,
+    "CorrespondenceId": 1,
+    "ApplicationId": 1,
     "Envelope": {
         "documents": [
             {
