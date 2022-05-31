@@ -1,0 +1,57 @@
+{
+    "ClientId": null,
+    "CallbackAppsList": [
+        "FO"
+    ],
+    "CorrespondenceId": 0,
+    "ApplicationId": null,
+    "Envelope": {
+        "documents": [
+            {
+                "applyAnchorTabs": "true",
+                "documentBase64": "dGVzdCBkb2M=",
+                "documentId": "1",
+                "fileExtension": "txt",
+                "name": "Name"
+            }
+        ],
+        "emailSubject": "Please sign the document set",
+        "recipients": {
+            "signers": [
+                {
+                    "email": "email@domain.co.uk",
+                    "name": "Test User",
+                    "recipientId": "1",
+                    "tabs": {
+                        "dateSignedTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_SIGNED"
+                            }
+                        ],
+                        "fullNameTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_NAME"
+                            }
+                        ],
+                        "initialHereTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_INITIAL"
+                            }
+                        ],
+                        "signHereTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_SIGNATURE"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "status": "sent"
+    },
+    "CaseId": null
+}

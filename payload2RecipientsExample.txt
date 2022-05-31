@@ -1,0 +1,88 @@
+{
+    "ClientId": null,
+    "CallbackAppsList": [
+        "FO"
+    ],
+    "CorrespondenceId": 0,
+    "ApplicationId": null,
+    "Envelope": {
+        "documents": [
+            {
+                "applyAnchorTabs": "true",
+                "documentBase64": "dGVzdCBkb2M=",
+                "documentId": "1",
+                "fileExtension": "txt",
+                "name": "Document name"
+            }
+        ],
+        "emailSubject": "Please sign the document set",
+        "recipients": {
+            "signers": [
+                {
+                    "email": "testUser@domain.co.uk",
+                    "name": "Test User",
+                    "recipientId": "1",
+                    "tabs": {
+                        "dateSignedTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_SIGNED_1"
+                            }
+                        ],
+                        "fullNameTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_NAME_1"
+                            }
+                        ],
+                        "initialHereTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_INITIAL_1"
+                            }
+                        ],
+                        "signHereTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_SIGNATURE_1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "email": "testUser2@domain.co.uk",
+                    "name": "Test User2",
+                    "recipientId": "2",
+                    "tabs": {
+                        "dateSignedTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_SIGNED_2"
+                            }
+                        ],
+                        "fullNameTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_NAME_2"
+                            }
+                        ],
+                        "initialHereTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_INITIAL_2"
+                            }
+                        ],
+                        "signHereTabs": [
+                            {
+                                "anchorIgnoreIfNotPresent": "true",
+                                "anchorString": "OCS_DOCUSIGN_SIGNATURE_2"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "status": "sent"
+    },
+    "CaseId": null
+}
